@@ -97,14 +97,35 @@
 }
 
 .footer {
-  width: 100%;
+  width: 80%;
+  margin: auto;
+  flex-direction: column;
+  display: flex;
+  gap: 30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
   text-align: center;
-  padding: 15px 20px;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 50px 0px;
+
+
 }
 
 .footer a {
   color: white;
   font-size: 12px;
 
+}
+
+
+
+.footer img { 
+  width: 300px;
+
+}
+
+.iletisim_bilgileri{
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
 }
