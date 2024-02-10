@@ -91,10 +91,7 @@ export default function course() {
           <br />
           <a href="#">STOCKBROKER EĞİTİM</a>
           <br />
-          <a href="#">
-            RAGIP TÜZÜN MAHALLESİ GÜRLER SOKAK 29/1 YENİMAHALLE/ANKARA
-          </a>
-          <br />
+
           <a href="#">İLETİŞİM : 0506 473 57 27</a>
         </div>
         <div>
