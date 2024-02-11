@@ -10,32 +10,38 @@ export default function course() {
     const videoData = [
       {
         id: 0,
-        videoUrl: "https://farukozdemir.s3.amazonaws.com/ders1.mp4",
+        videoUrl:
+          "https://drive.google.com/file/d/12OW3xuckBTD54yCCvR287UkTYLbneEOa/preview",
         baslik: "Ders 1",
       },
       {
         id: 1,
-        videoUrl: "https://farukozdemir.s3.amazonaws.com/ders2.mp4",
+        videoUrl:
+          "https://drive.google.com/file/d/1EVzsV8j-ATLsF_RIIe4TZfXbSoX587Tf/preview",
         baslik: "Ders 2",
       },
       {
         id: 2,
-        videoUrl: "https://farukozdemir.s3.amazonaws.com/ders3.mp4",
+        videoUrl:
+          "https://drive.google.com/file/d/1sk2Rala9z3nKIuB64L4YZkFu-g6bR_nN/preview",
         baslik: "Ders 3",
       },
       {
         id: 3,
-        videoUrl: "https://farukozdemir.s3.amazonaws.com/ders4.mp4",
+        videoUrl:
+          "https://drive.google.com/file/d/1BikBfEQMPwszgjmi41mFGXQDtufkVV9e/preview",
         baslik: "Ders 4",
       },
       {
         id: 4,
-        videoUrl: "https://farukozdemir.s3.amazonaws.com/ders5.mp4",
+        videoUrl:
+          "https://drive.google.com/file/d/11cqUs7qSV-GxrEvlAAHcbHD1YjwTEmUy/preview",
         baslik: "Ders 5",
       },
       {
         id: 5,
-        videoUrl: "https://farukozdemir.s3.amazonaws.com/ders6.mp4",
+        videoUrl:
+          "https://drive.google.com/file/d/13Ugg5v9RQR6aPEhfXL1c1cbuVPVkNBLV/preview",
         baslik: "Ders 6",
       },
     ];
@@ -59,9 +65,12 @@ export default function course() {
     return (
       <div className={styles.coursePageContainer}>
         <h2>{video?.baslik}</h2>
-        <video controls>
-          <source src={video?.videoUrl} type="video/mp4"></source>
-        </video>
+        <iframe
+          src={video?.videoUrl}
+          style={{ minHeight: "650px", borderColor: "none" }}
+          allow="autoplay"
+          target="_self"
+        ></iframe>
       </div>
     );
   }
