@@ -65,12 +65,15 @@ export default function course() {
     return (
       <div className={styles.coursePageContainer}>
         <h2>{video?.baslik}</h2>
-        <iframe
-          src={video?.videoUrl}
-          style={{ minHeight: "650px", borderColor: "none" }}
-          allow="autoplay"
-          target="_self"
-        ></iframe>
+        <div className={styles.video}>
+          <iframe
+            src={video?.videoUrl}
+            style={{ minHeight: "650px", borderColor: "none" }}
+            allow="autoplay"
+            target="_self"
+            frameBorder="0"
+          ></iframe>
+        </div>
       </div>
     );
   }
