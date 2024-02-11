@@ -68,7 +68,7 @@ export default function course() {
         <div className={styles.video}>
           <iframe
             src={video?.videoUrl}
-            style={{ minHeight: "650px", borderColor: "none" }}
+            style={{  borderColor: "none" }}
             allow="autoplay"
             target="_self"
             frameBorder="0"
