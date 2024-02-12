@@ -11,37 +11,37 @@ export default function course() {
       {
         id: 0,
         videoUrl:
-          "https://drive.google.com/file/d/12OW3xuckBTD54yCCvR287UkTYLbneEOa/preview",
+          "https://www.youtube.com/embed/RmT9ag6cdaw?si=4k6wqMxvfyiqKhwh",
         baslik: "Ders 1",
       },
       {
         id: 1,
         videoUrl:
-          "https://drive.google.com/file/d/1EVzsV8j-ATLsF_RIIe4TZfXbSoX587Tf/preview",
+          "https://www.youtube.com/embed/DscswE7MuS0?si=jU7VgX9-Sa6OysQU",
         baslik: "Ders 2",
       },
       {
         id: 2,
         videoUrl:
-          "https://drive.google.com/file/d/1sk2Rala9z3nKIuB64L4YZkFu-g6bR_nN/preview",
+          "https://www.youtube.com/embed/-Bq6d9kbw54?si=S4rqIIoR6VdLKpYK",
         baslik: "Ders 3",
       },
       {
         id: 3,
         videoUrl:
-          "https://drive.google.com/file/d/1BikBfEQMPwszgjmi41mFGXQDtufkVV9e/preview",
+          "https://www.youtube.com/embed/EFTyPQ3SR9Y?si=GymW8vlN65pietZR",
         baslik: "Ders 4",
       },
       {
         id: 4,
         videoUrl:
-          "https://drive.google.com/file/d/11cqUs7qSV-GxrEvlAAHcbHD1YjwTEmUy/preview",
+          "https://www.youtube.com/embed/F7GfzOEEmqg?si=Iz1m_ZzRPTVeZ60h",
         baslik: "Ders 5",
       },
       {
         id: 5,
         videoUrl:
-          "https://drive.google.com/file/d/13Ugg5v9RQR6aPEhfXL1c1cbuVPVkNBLV/preview",
+          "https://www.youtube.com/embed/7euye52lbHg?si=ar9fugXPrEF8W55k",
         baslik: "Ders 6",
       },
     ];
@@ -66,13 +66,18 @@ export default function course() {
       <div className={styles.coursePageContainer}>
         <h2>{video?.baslik}</h2>
         <div className={styles.video}>
+          
+
           <iframe
             src={video?.videoUrl}
             style={{  borderColor: "none" }}
-            allow="autoplay"
+          
             target="_self"
             frameBorder="0"
+          
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media;  gyroscope; picture-in-picture; web-share" allowfullscreen
           ></iframe>
+         
         </div>
       </div>
     );
